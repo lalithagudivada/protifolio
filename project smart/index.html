@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,17 +29,26 @@
       </header>
       <div class="centered">
         <div>
-          <h1>Hi ,I am  <span class="name">Lalitha</span></h1>
+          <h1>Hi ,I am  <span class="name" id="nn"></span></h1>
+          
+          <h5><a href="https://cdn-images.zety.com/templates/zety/minimo-4-classic-blue-navy-200@3x.png" class="nav-button">resume</a></h5>
           <h3><span id="element"></span></h3>
-          <h5><a href="resume.pdf" class="nav-button">resume</a></h5>
         </div>         
     </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#nn", {
+        strings: ["Lalitha", "Vijaya", "Bhavya","Hithasri","Geetha"],
+        typeSpeed:200,
+        loop: true,
+      });
+    </script>
    
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
         strings: ["Programmer", "Web Developer", "ML Enthusiast"],
-        typeSpeed: 50,
+        typeSpeed: 200,
         loop: true,
       });
     </script>
